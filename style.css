@@ -1,0 +1,85 @@
+body{
+    display: grid;
+    font-size:  20px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    color:blueviolet;
+    text-align: center;
+    font-size: 10vh;
+    font-weight: bold;
+}
+aside span{
+    text-align: right;
+    float: right;
+    margin-right: 1vw;
+    font-weight: bold;
+    font-size: 3vh;
+}
+aside div{
+    text-align: center;
+}
+aside{
+    width:15vw;
+    margin-top: 15vh;
+    position: fixed;
+    background-color: lightgrey;
+}
+aside nav{
+    display: none;
+    font-size: 2vh;
+}
+nav ul{
+    padding: 0 0 0 0;
+}
+nav ul li:hover{
+    background-color: rgb(131, 129, 129);
+}
+nav ul > li:hover > a {
+    color: white;
+}
+nav ul li{
+    margin-left: 0px;
+    list-style-type: none;
+    text-align: center;
+    background-color: lightgray;
+}
+nav ul li >a{
+    
+    text-decoration: none;
+    color:black;
+}
+main{
+    margin-top: 10vh;
+}
+.maincircle {
+    display:flexbox;
+    width: 80vw;
+    height: 80vh;
+    text-align: center;
+    shape-outside: circle();
+    clip-path: circle();
+    background: lightblue;
+}
+.main--text{
+    margin-top: 12vh;
+    margin-bottom: 0vh;
+    text-align: center;
+    
+}
+#snake{
+    vertical-align: middle;
+    margin-top: 3vh;
+    margin-bottom: 0px;
+    
+}
+.main--snake{
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+    text-align: center;
+    font-size: 7vh;
+    font-weight: bold;
+}
