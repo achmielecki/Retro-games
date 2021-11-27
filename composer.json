@@ -1,0 +1,12 @@
+{
+    "name":"achmielecki",
+    "description":"",
+    "repositories":[],
+    "require":{},
+    "recommend":{
+        "ext-zip":"*"
+    },
+    "autoload":{},
+    "bin":["bin"],
+    "config":{}
+}
