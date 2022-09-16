@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  achmielecki-site:
+    image: httpd:latest
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./:/usr/local/apache2/htdocs/
+    restart: always
