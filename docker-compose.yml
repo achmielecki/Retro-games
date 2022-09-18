@@ -1,10 +1,14 @@
 version: '3.9'
 services:
-  achmielecki-site:
-    image: httpd:latest
+  apache:
+    image: ubuntu/apache2:2.4-22.04_edge
     ports:
-      - 80:80
-      - 443:443
+      - 80
+      - 443
+    environment:
+      - APACHE_LOG_DIR=/usr/local/apache2/log/
     volumes:
-      - ./:/usr/local/apache2/htdocs/
+      - ./web:/var/www/html
+      - ./conf:/usr/local/apache2/sites-enabled/
+      - ./log:/usr/local/apache2/log/
     restart: always
