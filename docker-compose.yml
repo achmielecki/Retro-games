@@ -7,6 +7,7 @@ services:
       - 443
     environment:
       - APACHE_LOG_DIR=/usr/local/apache2/log/
+    container_name: achmielecki-site
     volumes:
       - ./web:/var/www/html
       - ./conf:/usr/local/apache2/sites-enabled/
